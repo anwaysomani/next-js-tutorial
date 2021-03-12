@@ -1,0 +1,10 @@
+.container {
+  background-color: yellow;
+}
+
+.nav_container {
+  height: 10vh;
+  background: transparent;
+  color: #fff;
+  text-transform: uppercase;
+}
