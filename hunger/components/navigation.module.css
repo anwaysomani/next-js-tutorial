@@ -1,10 +1,31 @@
-.container {
-  background-color: yellow;
-}
-
 .nav_container {
   height: 10vh;
   background: transparent;
   color: #fff;
   text-transform: uppercase;
+}
+
+.nav_item {
+  width: 10%;
+  padding: 3vh;
+}
+
+.font_12 {
+  font-size: 12px;
+}
+
+.m_0 {
+  margin: 0;
+}
+
+.pull_left {
+  float: left;
+}
+
+.pull_right {
+  float: right;
+}
+
+.f_w_900 {
+  font-weight: 900;
 }
