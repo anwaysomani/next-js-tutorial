@@ -4,13 +4,30 @@ import Diffy from "../components/diffy";
 import styles from '../styles/index.module.css'
 
 export default function Home() {
-  // var diffy_render = {
-  //
-  // }
+  var diffy_render = [
+    {
+      title: 'About Us',
+      subDescription: 'ILUMN Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.',
+      description: 'Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.',
+      toLeft: false
+    },
+    {
+      title: 'Masterchef',
+      subDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.',
+      description: 'Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.',
+      toLeft: true
+    },
+    {
+      title: 'Chocolate Pancakes',
+      subDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.',
+      description: 'Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.',
+      toLeft: true
+    }
+  ]
 
   return (
     <div>
-      <div className='background-image w-100 h-100 text-white'>
+      <div className={'background-image w-100 h-100 text-white'}>
         <Head>
           <title>La Faim</title>
           <link rel="icon" href="/favicon.ico"/>
@@ -29,13 +46,19 @@ export default function Home() {
       </div>
 
       {/* About Us */}
-      {/*<div className='background-white w-100 h-100'>*/}
-      {/*  <Diffy children={[{*/}
-      {/*    'title': 'Sample Title'},*/}
-      {/*    {*/}
-      {/*      'title': 'Sample 2 Title'*/}
-      {/*    }]} />*/}
-      {/*</div>*/}
+      <div className='background-white w-100 h-100'>
+        <Diffy obj={diffy_render[0]} />
+      </div>
+
+      {/* Masterchef */}
+      <div className='background-white w-100 h-100'>
+        <Diffy obj={diffy_render[1]} />
+      </div>
+
+      {/* Chocolate Pancakes */}
+      <div className='background-white w-100 h-100'>
+        <Diffy obj={diffy_render[2]} />
+      </div>
     </div>
   )
 }

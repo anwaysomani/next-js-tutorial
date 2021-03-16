@@ -1,0 +1,9 @@
+.hr_separator_title {
+  border: 0.2em solid #E8C300;
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+}
+
+.shadow_display {
+  box-shadow: 0.4em 0.4em #ddd;
+}
